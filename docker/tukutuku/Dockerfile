@@ -4,7 +4,7 @@ ARG PHP_VERSION=8.3
 
 FROM composer/composer:${COMPOSER_VERSION} as composer-source
 FROM node:${NODE_VERSION} as node-source
-FROM dunglas/frankenphp:1.1.2-php${PHP_VERSION} as base
+FROM dunglas/frankenphp:1.2-php${PHP_VERSION} as base
 
 # Install apt dependencies
 RUN apt-get update -qq; \
