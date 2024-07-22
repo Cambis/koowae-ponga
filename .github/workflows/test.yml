@@ -37,6 +37,13 @@ jobs:
 
       - uses: ramsey/composer-install@v2
 
+      - run: vendor/bin/sake dev/build flush=1
+        env:
+          SS_DATABASE_SERVER: 127.0.0.1
+          SS_DATABASE_NAME: SS_mysite
+          SS_DATABASE_USERNAME: root
+          SS_DATABASE_PASSWORD: root
+
       - run: vendor/bin/phpunit
         env:
           SS_DATABASE_SERVER: 127.0.0.1
