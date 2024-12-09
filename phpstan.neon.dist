@@ -1,5 +1,5 @@
 parameters:
-  level: 9
+  level: max
   paths:
     - _config.php
     - src
@@ -7,29 +7,7 @@ parameters:
   excludePaths:
     - ecs.php
     - rector.php
-  stubFiles:
-    - stubs/Psr/Container/ContainerExceptionInterface.stub
-    - stubs/Psr/Container/ContainerInterface.stub
-    - stubs/Psr/Container/NotFoundExceptionInterface.stub
-    - stubs/SilverStripe/Core/Injector/Injector.stub
-  universalObjectCratesClasses:
-    - SilverStripe\Core\Config\Config_ForClass
-    - SilverStripe\Forms\GridField\GridState_Data
-    - SilverStripe\ORM\DataObjectInterface
-    - SilverStripe\View\ArrayData
-    - SilverStripe\View\ViewableData
-    - Symbiote\QueuedJobs\Services\AbstractQueuedJob
   ignoreErrors:
-    -
-      # Ignore configuration properties
-      message: '#Static property [a-zA-Z0-9\\$\\_\\\\:\\(\\)]+ is never read, only written#'
-      identifier: property.onlyWritten
-      reportUnmatched: false
-    -
-      # Ignore iterable typed array properties https://github.com/phpstan/phpstan/discussions/7287
-      message: "#Property [a-zA-Z0-9\\$\\_\\\\:\\(\\)]+ type has no value type specified in iterable type array#"
-      identifier: missingType.iterableValue
-      reportUnmatched: false
     -
       # Prefer dynamic calls in PHPUnit
       messages:
