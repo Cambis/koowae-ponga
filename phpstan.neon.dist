@@ -1,3 +1,5 @@
+includes:
+  - vendor/cambis/silverstan/bleedingEdge.neon
 parameters:
   level: max
   paths:
@@ -7,6 +9,7 @@ parameters:
   excludePaths:
     - ecs.php
     - rector.php
+  treatPhpDocTypesAsCertain: false
   ignoreErrors:
     -
       # Prefer dynamic calls in PHPUnit

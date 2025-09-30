@@ -12,13 +12,13 @@ We use the following dependencies for development:
 
 - php 8.3
 - composer
-- node >=18
+- node >=22
 
 We use a number of quality of life tools to streamline development, install them via the command line.
 
 ```sh
 composer install
-yarn install
+pnpm install
 ```
 
 ## Coding standards 👮‍♂️

@@ -20,7 +20,6 @@ tests export-ignore
 ecs.php export-ignore
 phpstan.neon.dist export-ignore
 rector.php export-ignore
-stubs export-ignore
 
 # Documentation
 CHANGELOG.md export
