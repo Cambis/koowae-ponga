@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Cambis\SilverstripeModule\Tests\Model;
 
 use SilverStripe\Dev\SapphireTest;

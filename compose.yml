@@ -27,6 +27,3 @@ services:
 
 volumes:
   mysql:
-  caddy_config:
-  caddy_data:
-  

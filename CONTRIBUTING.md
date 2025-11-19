@@ -12,7 +12,7 @@ We use the following dependencies for development:
 
 - php 8.3
 - composer
-- node >=22
+- node >=24
 
 We use a number of quality of life tools to streamline development, install them via the command line.
 
