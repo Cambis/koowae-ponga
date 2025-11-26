@@ -29,9 +29,6 @@ return RectorConfig::configure()
         SilverstripeSetList::CODE_QUALITY,
     ])
     ->withSkip([
-        __DIR__ . '/stubs',
-        '*/Rector/*/Fixture/*',
-        '*/Source/*',
         ClosureToArrowFunctionRector::class,
         // This may cause a downgrade to fail
         AddTypeToConstRector::class,
